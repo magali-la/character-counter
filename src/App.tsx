@@ -1,8 +1,8 @@
 import { Box, CssBaseline, ThemeProvider } from "@mui/material"
 import { useState } from "react"
 import TextInput from "./components/TextInput/TextInput"
-import { theme } from "./styles/theme"
 import StatsDisplay from "./components/StatsDisplay/StatsDisplay";
+import { theme } from "./styles/theme";
 
 function App() {
   const [value, setValue] = useState<string>('');
