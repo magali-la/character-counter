@@ -5,3 +5,17 @@ export interface TextInputProps {
     placeholder?: string;
     initialValue?: string;
 }
+
+// create an interface for the text stats
+export interface TextStats {
+    characterCount: number;
+    wordCount: number;
+    readingTime: number;
+}
+
+// create an interface for the props for stats display
+export interface StatsDisplayProps {
+    // reference interface to define stats object
+    stats?: TextStats;
+    showReadingTime?: boolean;
+}

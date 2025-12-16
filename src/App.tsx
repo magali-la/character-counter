@@ -2,6 +2,7 @@ import { Box, CssBaseline, ThemeProvider } from "@mui/material"
 import { useState } from "react"
 import TextInput from "./components/TextInput/TextInput"
 import { theme } from "./styles/theme"
+import StatsDisplay from "./components/StatsDisplay/StatsDisplay";
 
 function App() {
   const [value, setValue] = useState<string>('');
@@ -26,8 +27,11 @@ function App() {
             placeholder="Start writing about anything"
           />
         </Box>
-        <Box sx={{ mx:'20rem'}}>
-        
+        {/* stats display section */}
+        <Box sx={{ width: '60vw', mx: 'auto', my: '2rem'}}>
+          <StatsDisplay
+            showReadingTime={true}
+          />
         </Box>
       </ThemeProvider>
     </>

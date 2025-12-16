@@ -8,8 +8,8 @@ export default function TextInput({ initialValue, placeholder, onTextChange}: Te
             value={initialValue}
             onChange={(event) => onTextChange(event.target.value)}
             multiline={true}
-            minRows={10}
-            maxRows={14}
+            minRows={8}
+            maxRows={10}
             fullWidth
             placeholder={placeholder}
         />
